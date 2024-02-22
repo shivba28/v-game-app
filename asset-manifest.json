@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/v-game-app/static/css/main.7bf27bdb.css",
+    "main.js": "/v-game-app/static/js/main.71116340.js",
+    "static/js/453.6cd1831f.chunk.js": "/v-game-app/static/js/453.6cd1831f.chunk.js",
+    "static/media/logo.png": "/v-game-app/static/media/logo.71d4f19a4404ec73e2ff.png",
+    "static/media/v-w.png": "/v-game-app/static/media/v-w.92ed01b29339867eb75e.png",
+    "index.html": "/v-game-app/index.html",
+    "main.7bf27bdb.css.map": "/v-game-app/static/css/main.7bf27bdb.css.map",
+    "main.71116340.js.map": "/v-game-app/static/js/main.71116340.js.map",
+    "453.6cd1831f.chunk.js.map": "/v-game-app/static/js/453.6cd1831f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7bf27bdb.css",
+    "static/js/main.71116340.js"
+  ]
+}
