@@ -80,15 +80,22 @@ p, h1{
 
 h1{
   font-size: 80px;
+  text-align: center;
+  /* overflow: hidden; Hide any text that exceeds the container's dimensions */
+  text-overflow: ellipsis;
 }
 
 .head{
   position: absolute;
   top:5%;
-  left: 30%;
+  left: 20%;
   text-align: center;
   background-color: bisque;
   border-radius: 40px;
+  width: 60%;
+  height: 20%;
+  justify-content: center;
+  align-items: center;
 }
 
 button {

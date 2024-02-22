@@ -5,6 +5,44 @@ import logo from './logo.png'; // Replace with your logo file path
 const App = () => {
   const [noButtonPos, setNoButtonPos] = useState({ x: 350, y: 380 });
 
+  const [text, setText] = useState("Will you be my Valentine?");
+  const [clickCount, setClickCount] = useState(0);
+  const [buttonText, setButtonText] = useState("Yes");
+  const [fontSize, setFontSize] = useState(80);
+
+  const handleYesButtonClick = () => {
+    setClickCount(clickCount + 1);
+
+    switch (clickCount) {
+      case 0:
+        setText("Are you sure?");
+        break;
+      case 1:
+        setText("Really, Really sure?");
+        break;
+      case 2:
+        setText("100% sure?");
+        break;
+      case 3:
+        setText("200% sure?");
+        break;
+      case 4:
+        setText("There is no going back!");
+        break;
+      case 5:
+        setText("Are you still clicking the 'Yes' button? Dumbo! Go call them right away");
+        setFontSize(50);
+        setButtonText("Understood");
+        break;
+      case 6:
+        setText("Happy Valentines!");
+        setFontSize(80);
+        break;
+      default:
+        break;
+    }
+  };
+
   const handleNoButtonHover = () => {
 
     const buttonContainer = document.querySelector('.button-container');
@@ -27,7 +65,7 @@ const App = () => {
     <div className="app">
 
       <div className="head">
-        <h1>Will you be my Valentine?</h1>
+        <h1 className='text-container' style={{ fontSize: `${fontSize}px` }}>{text}</h1>
       </div>
       <div className="logo-container">
         <img src={logo} alt="Logo" className="logo floating" />
@@ -35,7 +73,7 @@ const App = () => {
       <div className="button-container floating">
         <p>Click 'Yes' to confirm and 'No' to break my heart<span>💔</span></p>
         <div class="item button-parrot yes-button">
-    <button>Yes!
+    <button onClick={handleYesButtonClick}>{buttonText}
       <div class="parrot"></div>
       <div class="parrot"></div>
       <div class="parrot"></div>
